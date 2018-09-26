@@ -3,6 +3,9 @@ import {data} from './config'
 
 export default {
   name: 'PersonalInfo',
+  props: {
+    active: Number
+  },
   data () {
     return {
       msg: 'PersonalInfo',
@@ -10,9 +13,9 @@ export default {
 
     }
   },
-  mounted () {
+  methods: {
+    scroll (index) {
+      this.$emit('scroll', index)
+    }
   }
-  // methods () {
-
-  // }
 }

@@ -1,3 +1,19 @@
-.main-content{
-  background-color: aquamarine
+.el-container{
+  background-color: #E9EEF3;
+  .el-aside {
+    background-color: #D3DCE6;
+    color: #333;
+  }
+  .el-main {
+    height: 1000px;
+    overflow: scroll;
+    background-color: #E9EEF3;
+    color: #333;
+    text-align: center;
+    line-height: 160px;
+    .scroll{
+      height: 1000px;
+      overflow: scroll;
+    }
+}
 }

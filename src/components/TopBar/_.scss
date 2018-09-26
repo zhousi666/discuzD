@@ -1,14 +1,44 @@
-h1, h2 {
-    font-weight: normal;
+.el-header{
+  background-color: aliceblue;
+  height:80px;
+}
+.global-title{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between
   }
-  ul {
-    list-style-type: none;
-    padding: 0;
+.topInfoTitle{
+  display: flex;
+  flex-direction: row;
+}
+.menu-bar{
+  flex: 6;
+  width: auto;
+  background-color:aquamarine
+}
+.el-menu-demo{
+  background-color: aliceblue;
+}
+.el-menu--horizontal>.el-menu-item{
+  background-color: aliceblue
+}
+.el-menu-item.is-active{
+  background-color: aliceblue
+}
+.el-dropdown-menu__item--divided:before, .el-menu, .el-menu--horizontal>.el-menu-item:not(.is-disabled):focus, .el-menu--horizontal>.el-menu-item:not(.is-disabled):hover, .el-menu--horizontal>.el-submenu .el-submenu__title:hover{
+  background-color: aliceblue;
+}
+.global-login{
+  display: flex;
+  justify-content: center
+}
+.search{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-right: 30px;
+  .el-input__inner{
+      margin-right: 20px;
   }
-  li {
-    display: inline-block;
-    margin: 0 10px;
-  }
-  a {
-    color: #42b983;
-  }
+}

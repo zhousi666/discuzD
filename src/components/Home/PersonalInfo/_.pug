@@ -1,0 +1,17 @@
+.content
+  span ABOUT ME
+  .img {{msg}}
+  .personalInfo
+    span 个性签名
+  .articalList
+    ul()
+      li.artical-li(
+          v-for='(item, index) in data'
+          :key='item.id'
+          @click='scroll(index)'
+        ) 
+        span(
+          :style='{color: index===active ? "blue" :""}'
+        ) {{item.name}}
+  .markerAera
+    .span 热门评论区

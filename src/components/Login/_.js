@@ -1,11 +1,10 @@
 // import Axios from 'axios'
 import * as API from '../../API/api.js'
 export default {
-  name: 'TopBar',
+  name: 'Home',
   data () {
     return {
-      msg: '我的网站',
-      activeIndex: '1'
+      msg: '我的网站'
     }
   },
   mounted () {
