@@ -1,9 +1,12 @@
 el-container
-  el-aside
-    PersonalInfo(@scroll='scroll' :active='active')
-  el-main
-    .scroll(@scroll='scrollListen()' ref='cardBox')
-      .card(v-for='item in data'
-        :key='item.id'
-        ref='card' )
-          el-card {{item.name}}
+  el-header
+    TopBar
+  el-container
+    el-aside
+      PersonalInfo(@scroll='scroll' :active='active')
+    el-main
+      .scroll(@scroll='scrollListen()' ref='cardBox')
+        .card(v-for='item in data'
+          :key='item.id'
+          ref='card' )
+            el-card {{item.name}}

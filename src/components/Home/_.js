@@ -2,11 +2,13 @@
 import * as API from '../../API/api.js'
 import {data} from './config'
 import PersonalInfo from './PersonalInfo'
+import TopBar from './TopBar'
 
 export default {
   name: 'Home',
   components: {
-    PersonalInfo
+    PersonalInfo,
+    TopBar
   },
   data () {
     return {

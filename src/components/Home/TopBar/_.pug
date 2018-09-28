@@ -1,6 +1,6 @@
 .global-title
   .topInfoTitle
-    img(style="width: 60px; height: 60px" src="../../assets/i-neurology.png")
+    img(style="width: 60px; height: 60px" src="../../../assets/i-neurology.png")
     .title(style = "height: 60px;line-height: 60px;") 我的个人博客
   .menu-bar
     el-menu(
@@ -16,5 +16,5 @@
           size='mini'
       )
   .global-login
-    el-button(type='text') 登录
+    el-button(type='text' @click='login') 登录
     el-button(type='text') 退出
